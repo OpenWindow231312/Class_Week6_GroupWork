@@ -1,0 +1,35 @@
+/* Center the container in the middle of the screen */
+.dog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Style the button */
+.dog-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.dog-button:hover {
+    background-color: #e68900;
+}
+
+/* Image Styling - Fixed size */
+.dog-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* Ensures all images fill the box without distortion */
+    border-radius: 10px;
+    margin-top: 20px;
+}
