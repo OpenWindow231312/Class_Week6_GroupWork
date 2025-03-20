@@ -1,0 +1,21 @@
+.do-not-click {
+    margin-top: 15px;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    font-weight: bold;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.do-not-click:hover {
+    background-color: #ff4081;
+    transform: scale(1.05);
+}
