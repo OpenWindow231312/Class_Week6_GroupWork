@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import dogBarkSound from "../components/dogbark.mp3"
 import "./DogImageFetcher.css";
 
 const DogImageFetcher = () => {
@@ -7,7 +8,7 @@ const DogImageFetcher = () => {
 
   // Function to play the bark sound
   const playBarkSound = () => {
-    const audio = new Audio("sounds/dogbark.mp3); 
+    const audio = new Audio(dogBarkSound);
     audio.volume = 0.5; // Adjust volume (0.0 to 1.0)
     audio.play();
   };
@@ -18,7 +19,7 @@ const DogImageFetcher = () => {
         "https://dog.ceo/api/breeds/image/random"
       );
       setImageUrl(response.data.message);
-      playBarkSound(); 
+      playBarkSound(); // Play sound when fetching a new image
     } catch (error) {
       console.error("Error fetching the dog image:", error);
     }
