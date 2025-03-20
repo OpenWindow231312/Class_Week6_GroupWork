@@ -7,7 +7,6 @@ import DoNotClickButton from "./DoNotClickButton";
 const DogImageFetcher = () => {
   const [imageUrl, setImageUrl] = useState("");
 
-  // Function to play the bark sound
   const playBarkSound = () => {
     const audio = new Audio(dogBarkSound);
     audio.volume = 0.5;
