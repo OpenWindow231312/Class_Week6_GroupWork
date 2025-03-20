@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./DogImageFetcher.css"; // Correct CSS import
+import "./DogImageFetcher.css"; // Import the updated CSS
 
 const DogImageFetcher = () => {
   const [imageUrl, setImageUrl] = useState("");
@@ -17,13 +17,20 @@ const DogImageFetcher = () => {
   };
 
   return (
-    <div className="dog-container">
-      <button className="dog-button" onClick={fetchDogImage}>
-        Fetch Dog Image
-      </button>
-      {imageUrl && (
-        <img className="dog-image" src={imageUrl} alt="A Random Dog" />
-      )}
+    <div className="cute-container">
+      {/* Cute Navbar */}
+      <div className="cute-navbar">
+        <h1>Cuteness Overload 🐾</h1>
+      </div>
+
+      <div className="dog-box">
+        {imageUrl && (
+          <img className="dog-image" src={imageUrl} alt="A Random Dog" />
+        )}
+        <button className="dog-button" onClick={fetchDogImage}>
+          🐶 Show me another cute dog! 🐾
+        </button>
+      </div>
     </div>
   );
 };
