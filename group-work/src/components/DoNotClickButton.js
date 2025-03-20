@@ -1,11 +1,11 @@
 import React from "react";
 import "./DoNotClickButton.css";
-import soundEffect from "../components/randomsound.mp3"; // Import the sound file
+import soundEffect from "./randomsound.mp3"; // Corrected path
 
 const DoNotClickButton = () => {
   const handleClick = () => {
     const audio = new Audio(soundEffect);
-    audio.volume = 0.7; // Adjust volume (0.0 to 1.0)
+    audio.volume = 0.7;
     audio.play();
   };
 

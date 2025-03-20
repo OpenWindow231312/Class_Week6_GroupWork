@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import dogBarkSound from "../components/dogbark.mp3"
+import dogBarkSound from "./dogbark.mp3"; 
 import "./DogImageFetcher.css";
+import DoNotClickButton from "./DoNotClickButton"; 
 
 const DogImageFetcher = () => {
   const [imageUrl, setImageUrl] = useState("");
@@ -9,7 +10,7 @@ const DogImageFetcher = () => {
   // Function to play the bark sound
   const playBarkSound = () => {
     const audio = new Audio(dogBarkSound);
-    audio.volume = 0.5; // Adjust volume (0.0 to 1.0)
+    audio.volume = 0.5;
     audio.play();
   };
 
@@ -19,7 +20,7 @@ const DogImageFetcher = () => {
         "https://dog.ceo/api/breeds/image/random"
       );
       setImageUrl(response.data.message);
-      playBarkSound(); // Play sound when fetching a new image
+      playBarkSound(); 
     } catch (error) {
       console.error("Error fetching the dog image:", error);
     }
@@ -27,7 +28,6 @@ const DogImageFetcher = () => {
 
   return (
     <div className="cute-container">
-      {/* Cute Navbar */}
       <div className="cute-navbar">
         <h1>Cuteness Overload 🐾</h1>
       </div>
@@ -39,6 +39,10 @@ const DogImageFetcher = () => {
         <button className="dog-button" onClick={fetchDogImage}>
           🐶 Show me another cute dog! 🐾
         </button>
+        <div>
+          {" "}
+          <DoNotClickButton />
+        </div>
       </div>
     </div>
   );

@@ -1,18 +1,22 @@
 .do-not-click {
-    margin-top: 15px;
-    padding: 15px 60px;
-    font-size: 18px;
-    background-color: #ff85a2;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out, transform 0.2s;
-    font-weight: bold;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+        margin-top: 15px;
+        padding: 15px 126px;
+        font-size: 18px;
+        background-color: #ff85a2;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out, transform 0.2s;
+        font-weight: bold;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
+        -webkit-transition: background 0.3s ease-in-out, transform 0.2s;
+        -moz-transition: background 0.3s ease-in-out, transform 0.2s;
+        -ms-transition: background 0.3s ease-in-out, transform 0.2s;
+        -o-transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .do-not-click:hover {
